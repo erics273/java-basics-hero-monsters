@@ -16,7 +16,7 @@ public class App {
 		monsters.add(monster3);
 
 		for(Monster monster : monsters) {
-			System.out.println(monster.name + " : " + monster.health + " : " + monster.getClassification());
+			System.out.println(monster.getName() + " : " + monster.getHealth() + " : " + monster.getClassification());
 		}
 
 	}

@@ -1,12 +1,13 @@
 ## Let's create some classes!
 
 - Create an abstract class called "LivingThing".
-	- Create 2 public properties called "name" and "health"
-	- Give the class a constructor that sets the classes two public properties.
+	- Create 2 protected properties called "name" and "health"
+	- Give the class a constructor that sets the classes two protected properties.
+	- generate GETTERS for both properties
  	
 - Let's extend our abstract class "LivingThing" with a new class called Monster.
 	- The monster constructor should take an extra parameter called "classification" that sets a private instance variable of classification
-	- Create a getting for the private classification
+	- Create a GETTER for the private property classification
   	
 - Create three Monster instances in the main method of App.java
 	- Be sure to set each object's name and health!
