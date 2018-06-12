@@ -15,14 +15,8 @@ public class App {
 		monsters.add(monster2);
 		monsters.add(monster3);
 
-		Hero hero = new Hero("Superman", 100, "Clark Kent");
-
-		hero.fight(monsters);
-
-		if (hero.isAlive()) {
-			System.out.println("The hero, " + hero.getName() + ", prevailed!");
-		} else {
-			System.out.println(hero.getName() + " was bested by the monsters. We are doomed");
+		for(Monster monster : monsters) {
+			System.out.println(monster.name + " : " + monster.health + " : " + monster.getClassification());
 		}
 
 	}

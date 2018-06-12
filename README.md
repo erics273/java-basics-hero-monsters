@@ -1,22 +1,16 @@
+## Let's create some classes!
 
- ## It's time to create a hero to dispatch these pesky monsters.
+- Create an abstract class called "LivingThing".
+	- Create 2 public properties called "name" and "health"
+	- Give the class a constructor that sets the classes two public properties.
+ 	
+- Let's extend our abstract class "LivingThing" with a new class called Monster.
+	- The monster constructor should take an extra parameter called "classification" that sets a private instance variable of classification
+	- Create a getting for the private classification
+  	
+- Create three Monster instances in the main method of App.java
+	- Be sure to set each object's name and health!
  
- - Add a SETTER method to your LivingThing class named "setHealth" that lets you update the value
- of the "health" property.
+- Now add each of your monsters to an ArrayList called "monsters"
 
- - Now, create a new Class called "Hero" that EXTENDS the LivingThing class.
-  - This class should take an extra string parameter in the constructor called "secretIdentity"
- 
- - Add a method to the Hero class named "attack" that takes as a parameter a Monster object.
- The method should do three things:
-  - Reduce the LivingThing object's health by a random value between 0 and 10.
-  - Reduce the hero's health by a random value between 0 and 10.
-  - Print out how much damage the monster and hero did to each other.
-
- - Give the Hero class another method named "fight" that takes as a parameter an List of Monster objects
- and does the following:
-  - For each Monster object in the array, call the "attack" method so the hero can attack the monster.
-  - The hero and the monster should fight while one of them is alive
-  - Repeat the process until all the monsters or the hero is dead.
-
-- Finally, you will need to instantiate your hero object with the into a variable named "hero". Give your hero 100 health, a name, and a secret identity of your choice.
+- Loop through your array list and print out each monsters name, health, and classification
